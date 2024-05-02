@@ -64,6 +64,7 @@ class LoginScreen extends StatelessWidget {
                   _buildTelevisionStack(context),
                   SizedBox(height: 20),
                   CustomElevatedButton(
+                    onPressed: () => onTapNav(context),
                     text: "SIGN UP",
                     margin: EdgeInsets.only(
                       left: 26,
@@ -78,7 +79,7 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(height: 27),
                   GestureDetector(
                     onTap: () {
-                      onTapTxtAlreadyhavean(context);
+                      onTapNav(context);
                     },
                     child: RichText(
                       text: TextSpan(
@@ -156,7 +157,7 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  onTapTxtAlreadyhavean(BuildContext context) {
+  onTapNav(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.loginOldUsersScreen);
   }
 }

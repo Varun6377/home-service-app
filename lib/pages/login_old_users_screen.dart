@@ -69,7 +69,7 @@ class LoginOldUsersScreen extends StatelessWidget {
                   SizedBox(height: 40),
                   GestureDetector(
                     onTap: () {
-                      onTapTxtAlreadyhavean(context);
+                      onTapNav(context);
                     },
                     child: RichText(
                       text: TextSpan(
@@ -211,7 +211,7 @@ class LoginOldUsersScreen extends StatelessWidget {
     Navigator.pushNamed(context, AppRoutes.enterOtpScreen);
   }
 
-  onTapTxtAlreadyhavean(BuildContext context) {
+  onTapNav(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.loginScreen);
   }
 }
